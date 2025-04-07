@@ -10,9 +10,9 @@ abstract class Pizza
     protected array $toppings = [];
 
     public function getName(): string
-{
-    return $this->name;
-}
+    {
+        return $this->name;
+    }
     public function prepare(): void
     {
         echo "Готовим: {$this->name}\n";

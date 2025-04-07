@@ -5,5 +5,8 @@
         "psr-4": {
             "PizzaLibrary\\": "src/"
         }
+    },
+    "require": {
+        "php": "^8.0"
     }
 }
