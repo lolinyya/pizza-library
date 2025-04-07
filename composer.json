@@ -1,18 +1,9 @@
 {
-    "name": "lolinyya/pizza-store",
+    "name": "lolinyya/pizza-library",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "LullDev\\PizzaStore\\": "src/"
+            "PizzaLibrary\\": "src/"
         }
-    },
-    "require-dev": {
-        "phpstan/phpstan": "^1.10",
-        "squizlabs/php_codesniffer": "^3.7"
-    },
-    "scripts": {
-        "phpcs": "phpcs src --standard=PSR12",
-        "phpcbf": "phpcbf src --standard=PSR12",
-        "check": "@phpcs"
     }
 }

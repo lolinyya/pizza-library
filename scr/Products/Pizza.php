@@ -1,14 +1,13 @@
+// pizza-library/src/Products/Pizza.php
 <?php
 
-declare(strict_types=1);
+namespace PizzaLibrary\Products;
 
-namespace LullDev\PizzaStore;
-
-abstract class Pizza
+abstract class Pizza 
 {
-    protected string $name;      // Название пиццы
-    protected string $sauce;    // Соус
-    protected array $toppings = []; // Ингредиенты
+    protected string $name = '';
+    protected string $sauce = '';
+    protected array $toppings = [];
 
     public function prepare(): void
     {
@@ -17,6 +16,8 @@ abstract class Pizza
         echo "Топпинги: " . implode(", ", $this->toppings) . "\n";
     }
 
+    abstract public function bake(): void;
+    
     public function cut(): void
     {
         echo "Режем пиццу треугольниками!\n";
